@@ -5,6 +5,8 @@ import { redirect } from "next/navigation";
 import NewTweet from "./new-tweet";
 import Tweets from "./tweets";
 
+export const dynamic = "force-dynamic";
+
 export default async function Home() {
   const supabase = createServerComponentClient<Database>({ cookies });
 
